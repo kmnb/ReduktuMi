@@ -2,6 +2,9 @@
 #define MAINWINDOW_H
 
 #include <QMainWindow>
+#include <QList>
+#include "image.h"
+#include <QFileDialog>
 
 namespace Ui {
     class MainWindow;
@@ -16,8 +19,14 @@ public:
 protected:
     void changeEvent(QEvent *e);
 
-private:
+private :
     Ui::MainWindow *ui;
+    QList<Image> imagesList();
+
+public slots :
+    void addImages();
+    void removeImages();
+    void clearList();
 };
 
 #endif // MAINWINDOW_H

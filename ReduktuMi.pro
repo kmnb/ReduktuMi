@@ -4,7 +4,9 @@
 TARGET = ReduktuMi
 TEMPLATE = app
 SOURCES += main.cpp \
-    mainwindow.cpp
-HEADERS += mainwindow.h
+    mainwindow.cpp \
+    image.cpp
+HEADERS += mainwindow.h \
+    image.h
 FORMS += mainwindow.ui
 OTHER_FILES += README
