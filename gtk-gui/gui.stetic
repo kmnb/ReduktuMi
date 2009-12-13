@@ -1,0 +1,97 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<stetic-interface>
+  <configuration>
+    <images-root-path>..</images-root-path>
+    <target-gtk-version>2.12</target-gtk-version>
+  </configuration>
+  <import>
+    <widget-library name="glade-sharp, Version=2.12.0.0, Culture=neutral, PublicKeyToken=35e10195dab3c99f" />
+    <widget-library name="../bin/Debug/ReduktuMi.exe" internal="true" />
+  </import>
+  <widget class="Gtk.Window" id="ReduktuMi.Views.MainWindow" design-size="604 437">
+    <property name="MemberName" />
+    <property name="Title" translatable="yes">MainWindow</property>
+    <property name="WindowPosition">CenterOnParent</property>
+    <child>
+      <widget class="Gtk.Fixed" id="fixed3">
+        <property name="MemberName" />
+        <property name="HasWindow">False</property>
+        <child>
+          <placeholder />
+        </child>
+        <child>
+          <widget class="Gtk.VBox" id="vbox1">
+            <property name="MemberName" />
+            <property name="WidthRequest">301</property>
+            <property name="HeightRequest">392</property>
+            <property name="Spacing">6</property>
+            <child>
+              <widget class="Gtk.HButtonBox" id="hbuttonbox1">
+                <property name="MemberName" />
+                <property name="Size">2</property>
+                <property name="LayoutStyle">Edge</property>
+                <child>
+                  <widget class="Gtk.Button" id="btnAdd">
+                    <property name="MemberName" />
+                    <property name="CanFocus">True</property>
+                    <property name="Type">TextAndIcon</property>
+                    <property name="Icon">stock:gtk-add Button</property>
+                    <property name="Label" translatable="yes">Add</property>
+                    <property name="UseUnderline">True</property>
+                    <signal name="Clicked" handler="OnBtnAddClicked" />
+                  </widget>
+                  <packing>
+                    <property name="Expand">False</property>
+                    <property name="Fill">False</property>
+                  </packing>
+                </child>
+                <child>
+                  <widget class="Gtk.Button" id="btnRemove">
+                    <property name="MemberName" />
+                    <property name="CanFocus">True</property>
+                    <property name="Type">TextAndIcon</property>
+                    <property name="Icon">stock:gtk-remove Button</property>
+                    <property name="Label" translatable="yes">Remove</property>
+                    <property name="UseUnderline">True</property>
+                    <signal name="Clicked" handler="OnBtnRemoveClicked" />
+                  </widget>
+                  <packing>
+                    <property name="Position">1</property>
+                    <property name="Expand">False</property>
+                    <property name="Fill">False</property>
+                  </packing>
+                </child>
+              </widget>
+              <packing>
+                <property name="Position">0</property>
+                <property name="AutoSize">True</property>
+                <property name="Expand">False</property>
+                <property name="Fill">False</property>
+              </packing>
+            </child>
+            <child>
+              <widget class="Gtk.TreeView" id="treeViewImages">
+                <property name="MemberName" />
+                <property name="HeightRequest">314</property>
+                <property name="CanFocus">True</property>
+                <property name="Reorderable">True</property>
+                <property name="SearchColumn">1</property>
+              </widget>
+              <packing>
+                <property name="Position">1</property>
+                <property name="AutoSize">True</property>
+              </packing>
+            </child>
+            <child>
+              <placeholder />
+            </child>
+          </widget>
+          <packing>
+            <property name="X">15</property>
+            <property name="Y">17</property>
+          </packing>
+        </child>
+      </widget>
+    </child>
+  </widget>
+</stetic-interface>

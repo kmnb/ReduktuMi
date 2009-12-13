@@ -1,0 +1,30 @@
+﻿<Properties>
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" ctype="Workspace" />
+  <MonoDevelop.Ide.DebuggingService>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService>
+  <MonoDevelop.Ide.Workbench ActiveDocument="Views/_MainWindow.cs" ctype="Workbench">
+    <Files>
+      <File FileName="Main.cs" Line="1" Column="1" />
+      <File FileName="Models/ImagesList.cs" Line="1" Column="1" />
+      <File FileName="Views/_MainWindow.cs" Line="6" Column="1" />
+    </Files>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State expanded="True">
+          <Node name="ReduktuMi" expanded="True">
+            <Node name="UserInterface" expanded="True" />
+            <Node name="Models" expanded="True" />
+            <Node name="Views" expanded="True">
+              <Node name="MainWindow.cs" selected="True" />
+            </Node>
+          </Node>
+        </State>
+      </Pad>
+      <Pad Id="ClassPad">
+        <State expanded="True" selected="True" />
+      </Pad>
+    </Pads>
+  </MonoDevelop.Ide.Workbench>
+  <AuthorInfo Name="Boris Lassort" Email="boris@lassort.fr" Copyright="Boris Lassort" ctype="AuthorInformation" />
+</Properties>

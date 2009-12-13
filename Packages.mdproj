@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="3.5">
+  <PropertyGroup>
+    <ItemType>PackagingProject</ItemType>
+    <ProductVersion>9.0.21022</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{68A7645E-7A9C-4CD2-937A-D1361023EE23}</ProjectGuid>
+    <Packages>
+      <Packages>
+        <Package name="Linux Binaires">
+          <Builder targetFile="ReduktuMi-linux.tar.gz" platform="Linux" configuration="Debug" ctype="BinariesZipPackageBuilder">
+            <ChildEntries>
+              <SolutionItemReference path="ReduktuMi.csproj" />
+            </ChildEntries>
+            <RootEntry path="ReduktuMi.sln" id=":root:" />
+          </Builder>
+        </Package>
+        <Package name="Microsoft Windows Binaires">
+          <Builder targetFile="ReduktuMi-windows.tar.gz" platform="Windows" configuration="Debug" ctype="BinariesZipPackageBuilder">
+            <ChildEntries>
+              <SolutionItemReference path="ReduktuMi.csproj" />
+            </ChildEntries>
+            <RootEntry path="ReduktuMi.sln" id=":root:" />
+          </Builder>
+        </Package>
+      </Packages>
+    </Packages>
+  </PropertyGroup>
+</Project>
